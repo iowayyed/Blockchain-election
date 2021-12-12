@@ -1,0 +1,14 @@
+npm run dev
+
+web3.eth.getAccounts().then( function (result) { return result[0] });
+
+truffle test
+
+truffle console
+
+truffle migrate --reset
+
+Election.deployed().then(function(instance) { app = instance })
+
+web3.eth.getAccounts().then(function(acc){ accounts = acc })
+app.vote(1,{ from: accounts[0] })
